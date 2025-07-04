@@ -6,7 +6,7 @@ on:
       MANIFEST_BRANCH:
         description: 'PBRP Manifest Branch'
         required: true
-        default: ''
+        default: 'android-12.1'
         type: choice
         options:
         - android-12.1
@@ -19,15 +19,15 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree' # Your already made Device Tree for TWRP
         required: true
-        default: 'https://github.com/lazycodebuilder/recovery_rmx1851'
+        default: 'https://github.com/kay6888/device_motorola_fogo'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch' # Your Device Tree Branch, make sure it's right.
         required: true
-        default: 'android-14_pbrp'
+        default: 'android-12.1_pbrp'
       BUILD_TARGET:
         description: 'Specify your Build Target' # Pick among boot, recovery and vendor_boot
         required: true
-        default: ''
+        default: 'bootimage'
         type: choice
         options:
         - pbrp
@@ -37,7 +37,7 @@ on:
       LDCHECK:
         description: 'Use LDCHECK'
         required: false
-        default: 'false'
+        default: 'true'
         type: boolean
       LDCHECKPATH:
         description: 'Path of blobs to check' # Use it know what kind of dependencies your missing for decryption blobs.
