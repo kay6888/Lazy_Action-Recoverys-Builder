@@ -114,6 +114,7 @@ jobs:
     - name: Repo Sync
       run: |
         cd android-recovery
+        git clone https://github.com/your-source/device_samsung_s5e8535-common.git device/samsung/s5e8535-common
         repo sync -j$(nproc --all) --force-sync
       
     - name: Clone Device Tree
