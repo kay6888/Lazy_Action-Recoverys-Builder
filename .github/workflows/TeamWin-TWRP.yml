@@ -106,8 +106,7 @@ jobs:
     - name: Initialize Repo
       run: |
         mkdir android-recovery
-        cd android-recovery
-        git clone https://github.com/kay6888/android_device_samsung_s5e8535-common.git device/samsung/s5e8535-common        
+        cd android-recover
         git config --global user.name "kay6888"
         git config --global user.email "kay6888@github.com"
         repo init --depth=1 -u ${{ env.MANIFEST }} -b ${{ inputs.MANIFEST_BRANCH }}
