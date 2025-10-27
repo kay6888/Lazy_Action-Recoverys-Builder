@@ -106,7 +106,7 @@ jobs:
     - name: Initialize Repo
       run: |
         mkdir android-recovery
-        cd android-recover
+        cd android-recovery
         git config --global user.name "kay6888"
         git config --global user.email "kay6888@github.com"
         repo init --depth=1 -u ${{ env.MANIFEST }} -b ${{ inputs.MANIFEST_BRANCH }}
