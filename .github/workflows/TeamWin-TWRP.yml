@@ -115,6 +115,8 @@ jobs:
       run: |
         cd android-recovery
         git clone https://github.com/kay6888/local_manifests.git .repo/local_manifests
+        cd
+        cd android-recovery
         repo sync -j$(nproc --all) --force-sync
       
     - name: Clone Device Tree
